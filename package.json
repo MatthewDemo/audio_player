@@ -14,7 +14,7 @@
     "webpack-cli": "^5.0.1"
   },
   "scripts": {
-    "start": "npx webpack-dev-server --hot --progress --colors --debug --output-pathinfo",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

@@ -1,19 +1,22 @@
 li {
   list-style-type: none;
-  border: 1px solid rgb(204, 199, 199);
+  border: 1px solid rgb(77, 83, 136);
   margin-bottom: 15px;
   border-radius: 15px;
   padding-left: 25px;
   height: 110px;
+  background-color: rgba(90, 92, 182, 0.2);
 }
 
 .title {
-  font-weight: 600;
+  font-weight: 700;
   font-size: larger;
+  color: aliceblue;
 }
 
 .author {
   font-style: italic;
+  color: aliceblue;
 }
 
 .Pausebtn {
@@ -26,6 +29,7 @@ li {
   border-radius: 20px;
   border: 1px solid rgb(112, 109, 109);
   margin-right: 10px;
+
 }
 .Pausebtn img {
   top: 3px;
@@ -62,5 +66,14 @@ li {
 }
 
 
-
+html {
+  background-image: url("https://oir.mobi/uploads/posts/2021-03/1616587196_15-p-temno-sinii-fon-dlya-prezentatsii-16.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 

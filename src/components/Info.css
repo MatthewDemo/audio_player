@@ -1,0 +1,10 @@
+.Info {
+    position: fixed;
+    height: 100px;
+    width: 450px;
+    background-color: rgb(248, 247, 247);
+    bottom: 25px;
+    right: 40px;
+    opacity: 0.2;
+border-radius: 35px ;
+}
