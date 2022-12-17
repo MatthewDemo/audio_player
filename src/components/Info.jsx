@@ -1,11 +1,11 @@
 import React from "react";
 import "./Info.css";
-function Info({authorOfCurrentSong , titleOfCurrentSong}) {
-
+function Info({ title, author }) {
   return (
     <div className="Info">
-      {/* <p>{authorOfCurrentSong}</p> */}
-      <p>{titleOfCurrentSong}</p>
+        <img className="infoGif" src="https://i.gifer.com/Z23b.gif" alt="equa" />
+      <p className="infoTitle">{title}</p>
+      <p className="infoAuthor">{author}</p>
     </div>
   );
 }

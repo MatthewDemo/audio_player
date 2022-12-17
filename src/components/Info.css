@@ -1,10 +1,27 @@
 .Info {
-    position: fixed;
-    height: 100px;
-    width: 450px;
-    background-color: rgb(248, 247, 247);
-    bottom: 25px;
-    right: 40px;
-    opacity: 0.2;
-border-radius: 35px ;
+  position: fixed;
+  height: 110px;
+  width: 450px;
+  background-color: rgba(248, 247, 247, 0.192);
+  bottom: 25px;
+  right: 40px;
+  border-radius: 35px;
+  text-align: center;
+}
+
+.infoTitle {
+  font-size: 20px;
+  color: azure;
+}
+
+.infoAuthor {
+  color: azure;
+  font-style: italic;
+}
+
+.infoGif {
+    position: absolute;
+    height: 40px;
+    left: 30px;
+    top: 35px;
 }
