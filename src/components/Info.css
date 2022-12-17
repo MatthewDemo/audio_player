@@ -7,7 +7,15 @@
   right: 40px;
   border-radius: 35px;
   text-align: center;
+
+  opacity: 0;
+  animation: ani 2.5s forwards ;
 }
+
+@keyframes ani {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+  }
 
 .infoTitle {
   font-size: 20px;
@@ -24,4 +32,12 @@
     height: 40px;
     left: 30px;
     top: 35px;
+}
+
+.range {
+    position: absolute;
+    width: 100px;
+    transform: rotate(-90deg);
+    right: 0px;
+    top: 45px; 
 }

@@ -38,6 +38,7 @@ function AudioPlayer({ item, audioRef, onPlay, setVisible }) {
           alt="pause"
         />
       </button>
+      
     </div>
   );
 }
