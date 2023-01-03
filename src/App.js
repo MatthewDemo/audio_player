@@ -5,7 +5,7 @@ import AudioPlayer from "./components/AudioPlayer";
 
 function App() {
   const audioRef = useRef(new Audio());
-  
+
   const resultArray = [
     {
       title: "Tech House vibes",
@@ -242,26 +242,32 @@ function App() {
   const [title, setTitle] = useState("");
   const [author, setAuthor] = useState("");
   const [visible, setVisible] = useState(false);
-  const [audioVolume, setAudioVolume] = useState(0.5)
+  const [audioVolume, setAudioVolume] = useState(0.5);
 
-  audioRef.current.volume = audioVolume
+  audioRef.current.volume = audioVolume;
 
   const onPlay = (title, author) => {
-    setVisible(true);
     setAuthor(author);
     setTitle(title);
-  }
+  };
 
   return (
     <div className="App">
       <ul>
         {resultArray.map((item, idx) => (
-          <li key={idx}>
-            <AudioPlayer item={item} audioRef={audioRef} onPlay={onPlay} setVisible={setVisible} />
+          <li className="liStandart" key={idx}>
+            <AudioPlayer
+              item={item}
+              audioRef={audioRef}
+              onPlay={onPlay}
+              setVisible={setVisible}
+            />
           </li>
         ))}
       </ul>
-      {visible && <Info title={title} author={author} setAudioVolume={setAudioVolume} />}
+      {visible && (
+        <Info title={title} author={author} setAudioVolume={setAudioVolume} />
+      )}
     </div>
   );
 }

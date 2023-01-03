@@ -1,4 +1,4 @@
-li {
+.liStandart {
   list-style-type: none;
   border: 1px solid rgb(77, 83, 136);
   margin-bottom: 15px;
@@ -6,7 +6,10 @@ li {
   padding-left: 25px;
   height: 110px;
   background-color: rgba(90, 92, 182, 0.2);
+
 }
+
+
 
 .title {
   font-weight: 700;
